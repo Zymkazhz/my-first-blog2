@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'blog',  # Добавили что бы Джанго использовал приложение blog
+    'mysite',
 ]
 
 MIDDLEWARE = [
@@ -126,3 +127,5 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')  # Информация о рас
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+LOGIN_REDIRECT_URL = 'post_list'
